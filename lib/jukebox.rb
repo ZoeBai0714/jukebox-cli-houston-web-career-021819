@@ -26,12 +26,13 @@ def list(songs)
   end
 end
 
-=begin
-def play(list(songs))
+
+def play(songs)
   puts "Please enter a song name or number:"
   answer = gets.chomp
-  all_songs.include?(answer)? "Playing <#{all_songs[answer - 1]}>" : "Invalid input, please try again"
+  if 
+  end
 end
-=end
+
 
 
