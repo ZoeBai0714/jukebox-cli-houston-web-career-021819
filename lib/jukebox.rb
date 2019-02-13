@@ -30,8 +30,10 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   answer = gets.chomp.to_i
-  if answer.between?(1,9)
+  if answer.between?(1,9) == true
     return "Playing <#{songs[answer - 1]}>"
+  elsif songs.include?(answer) == true
+    return "Playing <#{answer}>"
   else
     return "Invalid input, please try again"
   end
