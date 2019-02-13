@@ -31,7 +31,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   answer = gets.chomp
   if answer.between?(1,9)
-    return ""
+    return "Playing <#{songs[answer - 1]}>"
+  else
+    return
   end
 end
 
