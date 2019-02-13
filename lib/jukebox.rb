@@ -10,3 +10,30 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def help
+  puts "I accept the following commands:"
+  puts "- help : displays this help message"
+  puts "- list : displays a list of songs you can play"
+  puts "- play : lets you choose a song to play"
+  puts "- exit : exits this program"
+end
+
+def list(songs)
+  all_songs = []
+  index = 0
+  while index < songs.length
+    all_songs << "#{index + 1}.#{songs[index]}"
+    index += 1
+  end
+  puts all_songs
+end
+
+=begin
+def play(list(songs))
+  puts "Please enter a song name or number:"
+  answer = gets.chomp
+  all_songs.include?(answer)? "Playing <#{all_songs[answer - 1]}>" : "Invalid input, please try again"
+end
+=end
+
+
