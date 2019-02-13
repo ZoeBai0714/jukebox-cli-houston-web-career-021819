@@ -30,7 +30,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   answer = gets.chomp
-  if answer
+  if answer.between?(1,9)
   end
 end
 
