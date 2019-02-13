@@ -19,13 +19,11 @@ def help
 end
 
 def list(songs)
-  all_songs = []
   index = 0
   while index < songs.length
-    all_songs << "#{index + 1}.#{songs[index]}"
+    puts "#{index + 1}.#{songs[index]}"
     index += 1
   end
-  puts all_songs
 end
 
 =begin
