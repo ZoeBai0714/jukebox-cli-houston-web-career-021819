@@ -29,7 +29,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  answer = gets.chomp
+  answer = gets.chomp.to_i
   if answer.between?(1,9)
     return "Playing <#{songs[answer - 1]}>"
   else
