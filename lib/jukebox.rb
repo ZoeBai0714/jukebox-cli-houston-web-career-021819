@@ -33,7 +33,7 @@ def play(songs)
   if answer.between?(1,9)
     return "Playing <#{songs[answer - 1]}>"
   else
-    return
+    return "Invalid input, please try again"
   end
 end
 
